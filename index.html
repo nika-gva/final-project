@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>final project</title>
+</head>
+
+<body>
+    <main class="container">
+        <nav>
+            <div class="logo">final</div>
+            <ul class="nav-items">
+                <li>posts</li>
+                <li>comments</li>
+                <li>photos</li>
+                <li>users</li>
+            </ul>
+            <div class="buttons">
+                <a href="#" class="login-btn">login</a>
+                <div class="menu-btn" onclick="mobileNavbar()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <section class="users">
+            <h1>users</h1>
+            <div class="users-container" id="users-container">
+            </div>
+        </section>
+        <div class="add-post">
+            <h1>Add new post</h1>
+            <form>
+                <input type="text" name="id" id="postId" disabled>
+                <input type="text" name="postTitle" id="postTitle" placeholder="title" required>
+                <label for="postBody">Body
+                    <textarea name="postBody" id="postBody" rows="3"></textarea>
+                </label>
+                <button type="button" onclick="addPost(this.form)">Submit</button>
+            </form>
+        </div>
+    </main>
+    <section class="gallery">
+        <h1>photos</h1>
+        <div id="img-container"></div>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
